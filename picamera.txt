@@ -1,0 +1,8 @@
+Commands:
+Enable Raspberry Pi Camera:-     sudo raspi-config
+
+Reboot:-     sudo reboot
+
+Install Camera Libraries:-      
+sudo apt-get install python-picamera
+sudo apt-get install python3-picamera

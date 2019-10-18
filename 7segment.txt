@@ -1,0 +1,10 @@
+pi@raspberrypi:-/4digitTime $ pwd
+/home/pi/4digitTime
+
+*Download file*
+pi@raspberrypi:-$ wget https://raspberrytips.nl/files/tm1637.py
+pi@raspberrypi:-/4digitTime $ ls
+tm1637.py
+
+*After Python file save*
+pi@raspberrypi:~/4digitTime $ Python clock.py

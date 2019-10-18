@@ -1,0 +1,15 @@
+pi@raspberrypi:- $ sudo raspi-config
+Go to Interfacing Options -> I2C -> Enable (Yes)
+
+pi@raspberrypi:- $ sudo apt-get update
+pi@raspberrypi:- $ sudo apt-get upgrade
+pi@raspberrypi:- $ sudo apt-get install build-essential python-dev python-smbus git
+pi@raspberrypi:- $ git clone https://github.com/adafruit/Adafruit_Python_ADS1x15.git
+pi@raspberrypi:- $ sudo python setup.py install
+pi@raspberrypi:- $ cd examples
+pi@raspberrypi:- $ python simpletest.py
+pi@raspberrypi:- $ sudo apt-get install python-matplotlib
+
+*Write Python Code*
+
+pi@raspberrypi:- $ python oscilloscope.py

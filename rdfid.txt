@@ -1,0 +1,23 @@
+*Connect pins according*
+SDA connects to Pin 24.
+SCK connects to Pin 23.
+MOSI connects to Pin 19.
+MISO connects to Pin 21.
+GND connects to Pin 6.
+RST connects to Pin 22.
+3.3v connects to Pin 1.
+
+1. sudo raspi-config
+2. select “5 Interfacing Options“. Once you have this option selected, press Enter.
+3. select “P4 SPI“, again press Enter to select the option once it is highlighted.
+4. select Yes with your arrow keys and press Enter to proceed. You will need to wait a little bit while the raspi-config tool does its thing in enabling SPI.
+5. the raspi-config tool you should see the following text appear on the screen, “The SPI interface is enabled“.
+6. To do this first get back to the terminal by pressing Enter and then ESC.
+7. sudo reboot
+
+*Getting Python ready for the RFID RC522*
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install python3-dev python3-pip
+sudo pip3 install spidev
+sudo pip3 install mfrc522

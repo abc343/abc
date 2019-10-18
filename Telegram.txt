@@ -1,0 +1,20 @@
+*Raspberry Pi Telegram Bot*
+install Telegram app on your smart phone from playstore
+open Telegram
+Request the Bot Father to create a new Bot.
+search "BotFather" and click to start
+create new bot using /newbot
+provide a Name for your Bot(e.g.msdtyit)
+Then, Provide Username for your Bot must be end in "bot"
+After this process the BotFather will give you a Token for access.
+
+*Install Telegram Bot on Raspberry Pi*
+sudo apt-get install python.pip
+sudo pip install teleport
+
+*After Python Code*
+python telegramled.py
+
+*phone msdtyit bot name*
+all on
+all off

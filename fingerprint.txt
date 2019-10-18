@@ -1,0 +1,27 @@
+pi@raspberrypi:- $ sudo bash
+*Download some required packages using wget command*
+root@raspberrypi:/home/pi# wget -0 - http://apt.pm-codeworks.de/pm-codeworks.de.gog | apt-key add -
+root@raspberrypi:/home/pi# wget http://apt.pm-codeworks.de/pm-codeworks.list -p /etc/apt/sources.list.d/
+
+*Update the raspberry pi*
+root@raspberrypi:/home/pi# apt-get update
+*Install the download finger print sensor library*
+root@raspbeerypi:/home/pi# apt-get install python-fingerprint
+*To return to the normal shell*
+root@raspbeerypi:/home/pi# exit
+
+*USB port on which your finger print sensor is connected.*
+pi@raspberrypi:- $ ls /dev/ttyUSB*
+pi@raspberrypi:- $ cd /usr/share/doc/python-fingerprint/examples/
+pi@raspberrypi:- /usr/share/doc/python-fingerprint/examples $ pwd
+pi@raspberrypi:- /usr/share/doc/python-fingerprint/examples $ ls
+pi@raspberrypi:- /usr/share/doc/python-fingerprint/examples $ sudo python example_index.py
+
+*For output use command*
+Command 			[discription]
+example_index.py 		[Shows template index table.]
+example_enroll.py 		[Stores new fingerprint]
+example_delete.py 		[Deletes a fingerprint from sensor]
+example_search.py 		[Search for recorded fingerprint]
+example_downloadimage.py 	[Read fingerprint and download it.]
+example_generaterandom.py 	[Generates 32 bit random number.]
